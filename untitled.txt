@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semarak Dies Natalis SMAN 1 Membalong 2025</title>
+    <style>
+        /* Palet Warna: Pastel Kuning (#FFF2CC), Biru (#A7C7E7), Beige (#F0EDE5) */
+        :root {
+            --pastel-yellow: #FFF2CC;
+            --pastel-blue: #A7C7E7;
+            --beige: #F0EDE5;
+            --dark-blue: #4A90E2;
+            --text-dark: #333;
+        }
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, var(--beige), var(--pastel-yellow));
+            color: var(--text-dark);
+            line-height: 1.6;
+            scroll-behavior: smooth; /* Transisi smooth scrolling */
+        }
+        header {
+            background: var(--pastel-blue);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            height: 80px;
+            width: auto;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background: var(--pastel-yellow);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+        nav a:hover {
+            background: var(--dark-blue);
+            color: white;
+            transform: scale(1.05);
+        }
+        section {
+            padding: 60px 20px;
+            min-height: 100vh;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease; /* Fade-in transisi */
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #beranda {
+            background: var(--pastel-blue);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .hero-text {
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease;
+            color: var(--text-dark);
+        }
+        .hero-image {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin: 20px 0;
+        }
+        .hashtag {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: var(--text-dark);
+        }
+        .description {
+            background: rgba(255,255,255,0.9);
+            color: var(--text-dark);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: left;
+        }
+        .additional-photo {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        #rundown {
+            background: var(--beige);
+        }
+        .day {
+            background: var(--pastel-blue);
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .day h2 {
+            color: var(--dark-blue);
+            border-bottom: 2px solid var(--pastel-yellow);
+            padding-bottom: 10px;
+        }
+        .event {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .event::before {
+            content: '';
+            position: absolute;
+            left: 0;
+        }
+        #kontak {
+            background: var(--pastel-yellow);
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .instagram-link {
+            display: inline-block;
+            background: var(--dark-blue);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+        .instagram-link:hover {
+            transform: scale(1.1);
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            .hero-text { font-size: 2em; }
+            .hero-image { max-width: 100%; }
+            nav { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="sma.jpg" alt="Logo SMAN 1 Membalong" class="logo">
+        <img src="bergeraklogo.jpg" alt="Logo Dies Natalis" class="logo">
+        <nav>
+            <a href="#beranda">🏠 Beranda</a>
+            <a href="#rundown">📋 Rundown</a>
+            <a href="#kontak">📞 Kontak</a>
+        </nav>
+    </header>
+
+    <section id="beranda">
+        <div class="hero-container">
+            <h1 class="hero-text">Semarak Dies Natalis 🎉</h1>
+            <img src="ramai.jpg" alt="Foto Hero Dies Natalis" class="hero-image">
+            <p class="hashtag">#BergerakDariSelatan! 🚀</p>
+        </div>
+        <div class="description">
+            <h2>Merajut Kebersamaan: Semangat Bulan Bahasa, Semangat Berbudaya 🌟</h2>
+            <p>Memperingati perayaan Dies Natalis SMAN 1 Membalong yang ke-22 tahun dan Bulan Bahasa, dengan serangkaian kegiatan yang mengapresiasi serta melestarikan budaya lokal. Mari kita rajut kebersamaan dalam semangat kebudayaan yang kaya! 🇮🇩</p>
+        </div>
+        <img src="dies.jpg" alt="Foto Acara Dies Natalis" class="additional-photo">
+    </section>
+
+    <section id="rundown">
+        <h1 style="text-align: center; color: var(--dark-blue);">Rundown Acara Dies Natalis 2025 ✨</h1>
+        <div class="day">
+            <h2>Senin, 13 Oktober 2025 📚</h2>
+            <div class="event">1. Lomba Antar Kelas Bulan Bahasa: Cipta Puisi untuk Kelas X dan XI di Ruang Pertemuan 🖋️</div>
+            <div class="event">2. Lomba Antar Kelas Bulan Bahasa: Baca Puisi untuk Kelas X dan XI di Lapangan Upacara 🎤</div>
+            <div class="event">3. Lomba Antar Kelas: Bercerita Bahasa Membalong untuk Semua Kelas di Lapangan Upacara 🗣️</div>
+            <div class="event">4. Persiapan Bazar Siswa di Lapangan Depan dan Lapangan Upacara 🛍️</div>
+        </div>
+        <div class="day">
+            <h2>Selasa, 14 Oktober 2025: Hari Parenting 👨‍👩‍👧‍👦</h2>
+            <div class="event">1. Pembukaan Acara dan Doa Bersama Parenting untuk Kelas X dan XII di Gedung Serba Guna 🙏</div>
+            <div class="event">2. Sesi Parenting Orang Tua Kelas XII Bersama Wali Kelas di Kelas 🏫</div>
+            <div class="event">3. Lomba Antar Kelas Bulan Bahasa: Menulis Cerpen untuk Kelas X dan XI di Ruang Pertemuan 📖</div>
+            <div class="event">4. Lomba Antar Kelas: Paduan Suara Bertema Lagu Daerah untuk Kelas X, XI, XII di Lapangan Upacara 🎵</div>
+            <div class="event">5. Bazar Siswa di Lapangan Depan dan Lapangan Upacara 🛒</div>
+        </div>
+        <div class="day">
+            <h2>Rabu, 15 Oktober 2025 🌈</h2>
+            <div class="event">1. Lomba Bercerita Bahasa Membalong Tingkat SMP se-Kecamatan Membalong di Ruang Pertemuan 🏆</div>
+            <div class="event">2. Lomba Permainan Tradisional Tingkat SD Kelas 5 se-Kecamatan Membalong di Lapangan Upacara 🎲</div>
+            <div class="event">3. Lomba Mewarnai Gambar Adat Istiadat dan Budaya Belitung Tingkat TK/PAUD se-Kecamatan Membalong di Gedung Serba Guna 🎨</div>
+            <div class="event">4. Lomba Antar Kelas Bulan Bahasa: Vokal Solo Putra untuk Kelas X dan XI di Lapangan Upacara 👦🎤</div>
+            <div class="event">5. Lomba Antar Kelas Bulan Bahasa: Vokal Solo Putri untuk Kelas X dan XI di Lapangan Upacara 👧🎤</div>
+            <div class="event">6. Bazar Siswa di Lapangan Depan dan Lapangan Upacara 🛍️</div>
+        </div>
+        <div class="day">
+            <h2>Kamis, 16 Oktober 2025 🎭</h2>
+            <div class="event">1. Pentas Seni (Pembagian Hadiah Lomba dan Anugrah Siswa Berprestasi 2025) di Lapangan Upacara 🏅</div>
+            <div class="event">2. Lomba Menghias Jajanan Tradisional di Koridor Ruang Guru 🍲</div>
+            <div class="event">3. Bazar Siswa di Lapangan Depan dan Lapangan Upacara 🛒</div>
+        </div>
+        <div class="day">
+            <h2>Jumat, 17 Oktober 2025 🏃‍♂️</h2>
+            <div class="event">1. Jalan Sehat di Lapangan Upacara 💨</div>
+            <div class="event">2. Bazar Siswa di Lapangan Depan dan Lapangan Upacara 🛍️</div>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <h1>Kontak & Lokasi 📍</h1>
+        <p>Hubungi kami untuk informasi lebih lanjut! Ikuti juga update di Instagram.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.904!2d105.95!3d-2.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zSMOxIDEgTWVtYmFsb25n!5e0!3m2!1sid!2sid!4v1690000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy"></iframe>
+        <p>Lokasi: SMAN 1 Membalong, Kecamatan Membalong, Kabupaten Belitung, Bangka Belitung.</p>
+        <a href="https://www.instagram.com/osissmansambl/" class="instagram-link" target="_blank">📸 Ikuti Instagram @osissmansambl</a>
+    </section>
+
+    <script>
+        // JavaScript untuk fade-in transisi saat scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Smooth scroll untuk nav links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
